@@ -1,4 +1,5 @@
 Imports System
+Imports System.ComponentModel.Design
 Imports System.Drawing
 Imports System.IO
 Imports System.Xml
@@ -7,41 +8,50 @@ Imports SNMPNET
 Module Program
     Sub Main(args As String())
         Do
-            Dim verificar As New Impressoras
-            Console.Write("Digite o caminho do arquivo: ")
-            Dim caminho As String = Console.ReadLine
-            Dim opção As String
-            Dim endereco As String
-            Dim comunidade As String
-            Dim xmlDoc As New XmlDocument()
-            Dim VER As String
-            Dim fabricante As String
-            Dim modelo As String
-            Dim serial As String
-            Dim leitura As String
-            If caminho = Nothing Then
-                Console.WriteLine("Arquivo não encontrado")
-            Else
-                xmlDoc.Load(caminho)
-                endereco = xmlDoc.SelectSingleNode("INFO").SelectSingleNode("ENDERECO").InnerText
-                comunidade = xmlDoc.SelectSingleNode("INFO").SelectSingleNode("COM_SNMP").InnerText
-                VER = xmlDoc.SelectSingleNode("INFO").SelectSingleNode("VER_SNMP").InnerText
-                fabricante = xmlDoc.SelectSingleNode("INFO").SelectSingleNode("FABRICANTE").InnerText
-                modelo = xmlDoc.SelectSingleNode("INFO").SelectSingleNode("MODELO").InnerText
-                serial = xmlDoc.SelectSingleNode("INFO").SelectSingleNode("SERIAL").InnerText
-                leitura = xmlDoc.SelectSingleNode("INFO").SelectSingleNode("LEITURA").InnerText
-                Console.WriteLine(endereco + " " + comunidade + " " + VER + " " + fabricante + " " + modelo + " " + serial + " " + leitura + vbCrLf)
 
-                Console.WriteLine("Deseja procurar um arquivo mais algum arquivo? (S\N): ")
-                opção = Console.ReadLine
-                If opção = "N" Or opção = "n" Then
-                    Exit Do
+
+            Dim verificar As New Impressoras
+            Console.Write("Deseja puxar todos os valores de um XML ou somente um especifico? (1 para todos e 2 para valor especifico)")
+            If Console.ReadLine = 1 Then
+
+            ElseIf Console.ReadLine = 2 Then
+                Console.Write("Digite o caminho do arquivo: ")
+                Dim caminho As String = Console.ReadLine
+                Dim opção As String
+                Dim endereco As String
+                Dim xmlDoc As New XmlDocument()
+
+                If caminho = Nothing Then
+                    Console.WriteLine("Arquivo não encontrado")
+                Else
+                    Do
+                        Console.WriteLine("Digite o nome elemento do xml: ")
+                        Dim elemeto As String = Console.ReadLine
+                        Console.WriteLine("Digite o valor do elemento: ")
+                        Dim valor As String = Console.ReadLine
+                        Try
+                            xmlDoc.Load(caminho)
+                            endereco = xmlDoc.SelectSingleNode(elemeto).SelectSingleNode(valor).InnerText
+                        Catch ex As Exception
+                            Console.WriteLine("Elemento ou valor não encontrado!")
+                        End Try
+
+                        Console.WriteLine($"Valor do elemento: {endereco}")
+
+                        Console.WriteLine("Deseja procurar mais algum valor do XML? (S\N): ")
+                        opção = Console.ReadLine
+                        If opção = "N" Or opção = "n" Then
+                            Exit Do
+
+                        End If
+
+                    Loop
+
                 End If
+            Else
+                Console.WriteLine("Valor invalido!")
+                Exit Do
             End If
         Loop
-
-
-
-
     End Sub
 End Module
