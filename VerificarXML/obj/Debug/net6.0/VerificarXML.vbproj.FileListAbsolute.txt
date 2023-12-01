@@ -12,9 +12,3 @@ C:\Users\gabri\source\repos\VerificarXML\VerificarXML\obj\Debug\net6.0\refint\Ve
 C:\Users\gabri\source\repos\VerificarXML\VerificarXML\obj\Debug\net6.0\VerificarXML.pdb
 C:\Users\gabri\source\repos\VerificarXML\VerificarXML\obj\Debug\net6.0\VerificarXML.genruntimeconfig.cache
 C:\Users\gabri\source\repos\VerificarXML\VerificarXML\obj\Debug\net6.0\ref\VerificarXML.dll
-C:\Users\gabri\source\repos\VerificarXML\VerificarXML\bin\Debug\net6.0\HtmlAgilityPack.dll
-C:\Users\gabri\source\repos\VerificarXML\VerificarXML\bin\Debug\net6.0\SnmpSharpNetCore.dll
-C:\Users\gabri\source\repos\VerificarXML\VerificarXML\bin\Debug\net6.0\SNMPNET.dll
-C:\Users\gabri\source\repos\VerificarXML\VerificarXML\bin\Debug\net6.0\SNMPNET.pdb
-C:\Users\gabri\source\repos\VerificarXML\VerificarXML\obj\Debug\net6.0\VerificarXML.vbproj.AssemblyReference.cache
-C:\Users\gabri\source\repos\VerificarXML\VerificarXML\obj\Debug\net6.0\VerificarXML.vbproj.CopyComplete

@@ -1,116 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "HtmlAgilityPack/1.11.54": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/HtmlAgilityPack.dll": {
-            "related": ".deps.json;.pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/HtmlAgilityPack.dll": {
-            "related": ".deps.json;.pdb;.xml"
-          }
-        }
-      },
-      "SnmpSharpNet-core/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/SnmpSharpNetCore.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SnmpSharpNetCore.dll": {}
-        }
-      },
-      "SNMPNET/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "HtmlAgilityPack": "1.11.54",
-          "SnmpSharpNet-core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/SNMPNET.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SNMPNET.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "HtmlAgilityPack/1.11.54": {
-      "sha512": "bgB79N4urc4D7hrD4R+Qk6CjPiYOfs6vfXNsmw3nCcfQEQvBQGjfAcl5k/tB1ZP1hA0d7xXs0jK8xAXV36IVUg==",
-      "type": "package",
-      "path": "htmlagilitypack/1.11.54",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "htmlagilitypack.1.11.54.nupkg.sha512",
-        "htmlagilitypack.nuspec",
-        "lib/Net35/HtmlAgilityPack.dll",
-        "lib/Net35/HtmlAgilityPack.pdb",
-        "lib/Net35/HtmlAgilityPack.xml",
-        "lib/Net40-client/HtmlAgilityPack.dll",
-        "lib/Net40-client/HtmlAgilityPack.pdb",
-        "lib/Net40-client/HtmlAgilityPack.xml",
-        "lib/Net40/HtmlAgilityPack.XML",
-        "lib/Net40/HtmlAgilityPack.dll",
-        "lib/Net40/HtmlAgilityPack.pdb",
-        "lib/Net45/HtmlAgilityPack.XML",
-        "lib/Net45/HtmlAgilityPack.dll",
-        "lib/Net45/HtmlAgilityPack.pdb",
-        "lib/NetCore45/HtmlAgilityPack.XML",
-        "lib/NetCore45/HtmlAgilityPack.dll",
-        "lib/NetCore45/HtmlAgilityPack.pdb",
-        "lib/netstandard1.3/HtmlAgilityPack.deps.json",
-        "lib/netstandard1.3/HtmlAgilityPack.dll",
-        "lib/netstandard1.3/HtmlAgilityPack.pdb",
-        "lib/netstandard1.3/HtmlAgilityPack.xml",
-        "lib/netstandard1.6/HtmlAgilityPack.deps.json",
-        "lib/netstandard1.6/HtmlAgilityPack.dll",
-        "lib/netstandard1.6/HtmlAgilityPack.pdb",
-        "lib/netstandard1.6/HtmlAgilityPack.xml",
-        "lib/netstandard2.0/HtmlAgilityPack.deps.json",
-        "lib/netstandard2.0/HtmlAgilityPack.dll",
-        "lib/netstandard2.0/HtmlAgilityPack.pdb",
-        "lib/netstandard2.0/HtmlAgilityPack.xml",
-        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
-        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
-        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
-        "lib/uap10.0/HtmlAgilityPack.XML",
-        "lib/uap10.0/HtmlAgilityPack.dll",
-        "lib/uap10.0/HtmlAgilityPack.pdb",
-        "lib/uap10.0/HtmlAgilityPack.pri"
-      ]
-    },
-    "SnmpSharpNet-core/1.0.0": {
-      "sha512": "P7PRyKnd6MfmvMvoYQdOwBQm5JRIWL80229gpGA88x8Anx7ofH1jbzDTfp84RxuspjvSzB5H+IipBhXSHozL6w==",
-      "type": "package",
-      "path": "snmpsharpnet-core/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/SnmpSharpNetCore.dll",
-        "snmpsharpnet-core.1.0.0.nupkg.sha512",
-        "snmpsharpnet-core.nuspec"
-      ]
-    },
-    "SNMPNET/1.0.0": {
-      "type": "project",
-      "path": "../../SNMPNET/SNMPNET/SNMPNET.vbproj",
-      "msbuildProject": "../../SNMPNET/SNMPNET/SNMPNET.vbproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "SNMPNET >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\gabri\\.nuget\\packages\\": {}
@@ -138,11 +33,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\gabri\\source\\repos\\SNMPNET\\SNMPNET\\SNMPNET.vbproj": {
-              "projectPath": "C:\\Users\\gabri\\source\\repos\\SNMPNET\\SNMPNET\\SNMPNET.vbproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

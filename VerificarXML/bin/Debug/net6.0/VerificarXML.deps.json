@@ -7,61 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "VerificarXML/1.0.0": {
-        "dependencies": {
-          "SNMPNET": "1.0.0"
-        },
         "runtime": {
           "VerificarXML.dll": {}
-        }
-      },
-      "HtmlAgilityPack/1.11.54": {
-        "runtime": {
-          "lib/netstandard2.0/HtmlAgilityPack.dll": {
-            "assemblyVersion": "1.11.54.0",
-            "fileVersion": "1.11.54.0"
-          }
-        }
-      },
-      "SnmpSharpNet-core/1.0.0": {
-        "runtime": {
-          "lib/netstandard2.0/SnmpSharpNetCore.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "SNMPNET/1.0.0": {
-        "dependencies": {
-          "HtmlAgilityPack": "1.11.54",
-          "SnmpSharpNet-core": "1.0.0"
-        },
-        "runtime": {
-          "SNMPNET.dll": {}
         }
       }
     }
   },
   "libraries": {
     "VerificarXML/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "HtmlAgilityPack/1.11.54": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-bgB79N4urc4D7hrD4R+Qk6CjPiYOfs6vfXNsmw3nCcfQEQvBQGjfAcl5k/tB1ZP1hA0d7xXs0jK8xAXV36IVUg==",
-      "path": "htmlagilitypack/1.11.54",
-      "hashPath": "htmlagilitypack.1.11.54.nupkg.sha512"
-    },
-    "SnmpSharpNet-core/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-P7PRyKnd6MfmvMvoYQdOwBQm5JRIWL80229gpGA88x8Anx7ofH1jbzDTfp84RxuspjvSzB5H+IipBhXSHozL6w==",
-      "path": "snmpsharpnet-core/1.0.0",
-      "hashPath": "snmpsharpnet-core.1.0.0.nupkg.sha512"
-    },
-    "SNMPNET/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
