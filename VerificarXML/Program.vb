@@ -20,24 +20,19 @@ Module Program
                 If caminho = Nothing Then
                     Console.WriteLine("Arquivo não encontrado")
                 Else
-                    Do
-                        Try
-                            xmlDoc.Load(caminho)
-                            Console.WriteLine("Digite o nome do elemento: ")
-                            endereco = xmlDoc.SelectSingleNode(Console.ReadLine).InnerText
-                            Console.WriteLine(endereco + " ")
 
-                            Console.WriteLine("Deseja procurar mais algum arquivo XML? (S\N): ")
-                            opção = Console.ReadLine
-                            If opção = "N" Or opção = "n" Then
-                                Exit Do
-                            End If
-                        Catch ex As Exception
-                            Console.WriteLine("Elemento não encontrado!")
-                            Exit Do
-                        End Try
-                    Loop
-
+                    Try
+                        xmlDoc.Load(caminho)
+                        Console.WriteLine("Digite o nome do elemento: ")
+                        endereco = xmlDoc.SelectSingleNode(Console.ReadLine).InnerText
+                        Console.WriteLine(endereco + " ")
+                        Console.WriteLine("Deseja procurar mais algum arquivo XML? (S\N): ")
+                        opção = Console.ReadLine
+                        If opção = "N" Or opção = "n" Then
+                        End If
+                    Catch ex As Exception
+                        Console.WriteLine("Elemento não encontrado!")
+                    End Try
                 End If
             ElseIf Console.ReadLine = 2 Then
                 Console.Write("Digite o caminho do arquivo: ")
