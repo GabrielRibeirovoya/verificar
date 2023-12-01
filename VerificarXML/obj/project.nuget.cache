@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Cd4yr0sQc7MNEoJLRUJcT0poPqGGAdEEomX94ao6emYzkW/u3/Rjz3DzKpjtD/8C4zqjVPVC18WM9aaYx4QCdA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabri\\source\\repos\\VerificarXML\\VerificarXML\\VerificarXML.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\htmlagilitypack\\1.11.54\\htmlagilitypack.1.11.54.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\snmpsharpnet-core\\1.0.0\\snmpsharpnet-core.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
